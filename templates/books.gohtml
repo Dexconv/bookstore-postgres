@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    {{range .}}
+        <li>
+            <a href="/books/show?isbn={{.Isbn}}">{{.Isbn}}</a> - {{.Title}} - {{.Author}} - {{.Price}}</li><br>
+    {{end}}
+    <br><a href="/books/create">add more</a>
+</ul>
+
+</body>
+</html>

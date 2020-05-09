@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul>
+        <li>{{.Isbn}} - {{.Title}} - {{.Author}} - {{.Price}}</li><br>
+        <a href="/books/update?isbn={{.Isbn}}">update</a><br>
+        <a href="/books/delete/process?isbn={{.Isbn}}">delete</a><br>
+        <a href="/books">return</a>
+    </ul>
+</body>
+</html>
